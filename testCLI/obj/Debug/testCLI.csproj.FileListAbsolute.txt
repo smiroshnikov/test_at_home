@@ -1,0 +1,5 @@
+D:\Development\C#_studies\test_at_home\testCLI\bin\Debug\testCLI.exe
+D:\Development\C#_studies\test_at_home\testCLI\bin\Debug\testCLI.pdb
+D:\Development\C#_studies\test_at_home\testCLI\obj\Debug\testCLI.csprojResolveAssemblyReference.cache
+D:\Development\C#_studies\test_at_home\testCLI\obj\Debug\testCLI.exe
+D:\Development\C#_studies\test_at_home\testCLI\obj\Debug\testCLI.pdb

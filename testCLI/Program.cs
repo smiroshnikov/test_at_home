@@ -49,20 +49,43 @@ namespace testCLI
             fruits.Add("watermelon");
             fruits.Add("orange");
             fruits.Add("grapes");
+            fruits.Add("banana");
 
 
             Console.WriteLine("\n-----------------------------------------------------------------");
             var i = 0;
+            var value = 0;
+
             foreach (var item in fruits)
             {
                 i += 1;
                 Console.WriteLine("{0} ->{1}", i.ToString(), item);
-                if (i % 2 == 0)
-                {
-                    //TODO
-                    fruits.Remove(fruits[i]);
-                }
+                
+//                if (i % 2 != 0) continue;
+//                try
+//                {
+//                    // statements causing exception
+//                    fruits.Remove(fruits[i]);
+//                }
+//                catch (Exception e1)
+//                {
+//                    // error handling code
+//                    Console.WriteLine("Fuck you ! {0}", e1);
+//                    value = 13;
+//                    throw new ArgumentNullException("Blah Blah exception ! ");
+//                }
+//                finally
+//                {
+//                    // statements to be executed
+//                    Console.WriteLine("WILL EXECUTE IN ANY CASE ....{0}", value.ToString());
+//                }                
             }
+            fruits.Sort();
+            foreach (var fruit in fruits)
+            {
+                Console.WriteLine(fruit);
+            }
+            
         }
     }
 }

@@ -7,6 +7,7 @@
       <e p="test_at_home.sln" t="IncludeFlat" />
       <e p="testCLI" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Fibonacci.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">

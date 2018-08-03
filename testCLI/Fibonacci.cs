@@ -6,7 +6,7 @@ namespace testCLI
     {
         private static long Fib(long n)
         {
-            long result = 1;
+            long result;
 
             if (n == 1 || n == 2)
             {

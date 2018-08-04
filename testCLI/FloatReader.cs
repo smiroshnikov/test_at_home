@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
 namespace testCLI
 {
@@ -24,7 +23,7 @@ namespace testCLI
         {
             try
             {
-                double result = double.Parse(input);
+                var result = double.Parse(input);
                 Console.WriteLine(result);
                 return result;
             }
@@ -35,13 +34,13 @@ namespace testCLI
             }
         }
 
-        private static void Main(string[] args)
+        private static void Main()
         {
-            ReadFloat("5,0000000000000005");
+            Console.WriteLine(ReadFloat("5,0000000000000005"));
             ReadFloat("hello!");
             ReadFloat(null);
             ReadDouble("5.5");
-            ReadDouble("0,300000000000005");
+            Console.WriteLine(ReadDouble("0,300000000000005"));
         }
     }
 }

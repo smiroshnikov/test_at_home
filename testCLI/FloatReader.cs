@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace testCLI
 {
@@ -41,6 +42,13 @@ namespace testCLI
             ReadFloat(null);
             ReadDouble("5.5");
             Console.WriteLine(ReadDouble("0,300000000000005"));
+            var s1 = "abcdefg";
+            char[] c = {'a', 'b'};
+            char[] c2 = { };
+            s1 = s1 + 'a';
+
+            var s2 = new string(s1.ToCharArray().Reverse().ToArray());
+            Console.Out.WriteLine("s2 = {0}", s2);
         }
     }
 }

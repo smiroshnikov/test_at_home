@@ -6,7 +6,7 @@ namespace testCLI.Properties
 {
     public static class Speech
     {
-        private static void Main(string[] args)
+        private static void Main2(string[] args)
         {
             // Initialize a new instance of the SpeechSynthesizer.
             using (SpeechSynthesizer synth = new SpeechSynthesizer())
@@ -15,7 +15,7 @@ namespace testCLI.Properties
                 synth.SetOutputToDefaultAudioDevice();
 
                 // Speak a string synchronously.
-//                synth.Speak("What is your favorite color?");
+                synth.Speak("What is your favorite color?");
 //                synth.Speak("Трой ! Я сьем рыбку  ! ");
 //                synth.Speak(" טרוי שלום !  ");
                 Console.WriteLine(synth.GetInstalledVoices());

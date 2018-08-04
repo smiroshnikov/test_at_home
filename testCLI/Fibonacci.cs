@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Speech.Synthesis;
 namespace testCLI
 {
     public static class Fibonacci
@@ -21,10 +21,10 @@ namespace testCLI
             return result;
         }
 
-        public static void Main()
+        public static void Main2()
         {
-            Fib(9);
-            Console.WriteLine(Fib(117));
+            //Fib(9);
+            Console.WriteLine(Fib(19));
         }
     }
 }

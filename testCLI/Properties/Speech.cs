@@ -1,11 +1,12 @@
 ﻿using System;
+using System.Globalization;
 using System.Speech.Synthesis;
 
 namespace testCLI.Properties
 {
-    public class Speech
+    public static class Speech
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             // Initialize a new instance of the SpeechSynthesizer.
             using (SpeechSynthesizer synth = new SpeechSynthesizer())
@@ -14,10 +15,11 @@ namespace testCLI.Properties
                 synth.SetOutputToDefaultAudioDevice();
 
                 // Speak a string synchronously.
-                //synth.Speak("What is your favorite color?");
-                synth.Speak("Трой ! Иди Спать ! ");
-                synth.Speak("Трой ! Я заберу твои машинки и игрушки  ! ");
-                synth.Speak("Трой ! Я заберу маму и папу и все все конфетки !  ! ");
+//                synth.Speak("What is your favorite color?");
+//                synth.Speak("Трой ! Я сьем рыбку  ! ");
+//                synth.Speak(" טרוי שלום !  ");
+                Console.WriteLine(synth.GetInstalledVoices());
+//                Console.WriteLine(synth.GetCurrentlySpokenPrompt());
                 
             }
 
